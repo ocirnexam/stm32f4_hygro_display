@@ -12,9 +12,7 @@ volatile uint32_t value;
 
 int main(void)
 {
-
-    // Blinky Code
-    RCC->AHB1ENR |= 1;
+    RCC->AHB1ENR |= 1; // Enable GPIOA
 
     GPIO_InitTypeDef GPIOA_params;
     uint32_t delay = 0;
