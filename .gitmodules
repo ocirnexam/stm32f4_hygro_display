@@ -1,0 +1,3 @@
+[submodule "src/STM32F4HAL"]
+	path = src/STM32F4HAL
+	url = https://github.com/STMicroelectronics/STM32CubeF4.git
