@@ -37,7 +37,6 @@ void SOIL_Sensor_Init(SOIL_Sensor *sensor)
     HAL_ADC_Init(&sensor->adc_handle);
     HAL_ADC_ConfigChannel(&sensor->adc_handle, &adc_channel);
     HAL_ADC_Start(&sensor->adc_handle); // Start ADC
-    // HAL_ADC_PollForConversion(&sensor->adc_handle, HAL_MAX_DELAY); // Poll for conversion 
 }
 
 uint32_t SOIL_Sensor_GetValue(SOIL_Sensor* sensor)
